@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 600px;
+    margin: 150px auto;
+}
+
+.title{
+    font-size: 22px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+summary{
+    list-style: none;
+    padding: .75em 1em;
+    font-weight: 600;
+    cursor:  pointer;
+    background: #efefef;
+    box-shadow: 12px 12px 24px #cbcbcb, -12px -12px 24px #fff;
+    padding-left: 3.25rem;
+    position: relative;
+}
+
+
+summary::before{
+    content: "+";
+    width: 1.6rem;
+    height: 1.6rem;
+    background-color: #ed445b;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: .75rem;
+    transform: translateY(-50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+summary:hover{
+    background-color: #e0dddd;
+}
+
+details div{
+    padding: 1.5em;
+    border-top: 1px solid #cfd1d6;
+    background: #efefef;
+    box-shadow: 12px 12px 24px #cbcbcb, -12px -12px 24px #fff;
+}
+
+details div p{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+details{
+    margin-top: 1rem;
+}
+
+details[open] summary::before{
+    content: "-";
+}
+
+details[open] summary{
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
